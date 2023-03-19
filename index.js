@@ -1,13 +1,12 @@
 const mongoose = require('mongoose');
 
-const { username, password } = require('./credentials');
 
-mongoose.connect(`mongodb+srv://${username}:${password}@<dbname>.cluster.mongodb.net/<dbname>?retryWrites=true&w=majority`, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-  useCreateIndex: true,
-  useFindAndModify: false
+
+//update connection string
+mongoose.connect(`mongodb+srv://mod18API:zQs6vfnGNPTcumOp@module-18.6oucric.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+   
 });
 
 
-//dsafadsf
